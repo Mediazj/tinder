@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_register"
+    tools:context=".ui.user.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d50"
+            android:background="@drawable/bg_et_register"
+            android:layout_marginLeft="@dimen/d40"
+            android:layout_marginRight="@dimen/d40"
+            android:hint="@string/et_name"
+            android:textColorHint="@color/c2"
+            android:textColor="@color/c3"
+            android:textSize="@dimen/s15"
+            android:paddingLeft="@dimen/d15"/>
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d50"
+            android:layout_below="@+id/et_name"
+            android:layout_marginTop="@dimen/d10"
+            android:background="@drawable/bg_et_register"
+            android:layout_marginLeft="@dimen/d40"
+            android:layout_marginRight="@dimen/d40"
+            android:hint="@string/et_pass"
+            android:textColorHint="@color/c2"
+            android:inputType="number"
+            android:textColor="@color/c3"
+            android:textSize="@dimen/s15"
+            android:paddingLeft="@dimen/d15"/>
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d50"
+            android:layout_marginTop="@dimen/d10"
+            android:layout_marginLeft="@dimen/d40"
+            android:layout_marginRight="@dimen/d40"
+            android:layout_below="@+id/et_pass"
+            android:background="@drawable/bg_btn_register_not"
+            android:textSize="@dimen/s15"
+            android:textColor="@android:color/white"
+            android:text="@string/bt_login"
+            android:textAllCaps="false"
+        />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_back_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to register"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/s15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

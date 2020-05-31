@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_register"
+    tools:context=".ui.user.RegisterActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/d40"
+        android:layout_marginRight="@dimen/d40"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/apple1"
+            android:scaleType="fitXY">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d50"
+        android:layout_marginLeft="@dimen/d40"
+        android:layout_marginRight="@dimen/d40"
+        android:layout_marginTop="@dimen/d10"
+        app:layout_constraintTop_toBottomOf="@+id/cv_photo"
+        android:background="@drawable/bg_et_register"
+        android:hint="Enter full name"
+        android:paddingLeft="@dimen/d15"
+        android:textColorHint="@color/c2"
+        android:textColor="@color/c3"
+        android:textSize="@dimen/s15"
+        android:maxLength="30">
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d50"
+        android:layout_marginLeft="@dimen/d40"
+        android:layout_marginRight="@dimen/d40"
+        android:layout_marginTop="@dimen/d10"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        android:background="@drawable/bg_et_register"
+        android:hint="Enter email"
+        android:paddingLeft="@dimen/d15"
+        android:textColorHint="@color/c2"
+        android:textColor="@color/c3"
+        android:textSize="@dimen/s15"
+        android:maxLength="30">
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d50"
+        android:layout_marginLeft="@dimen/d40"
+        android:layout_marginRight="@dimen/d40"
+        android:layout_marginTop="@dimen/d10"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        android:background="@drawable/bg_et_register"
+        android:hint="Enter pass"
+        android:inputType="number"
+        android:paddingLeft="@dimen/d15"
+        android:textColorHint="@color/c2"
+        android:textColor="@color/c3"
+        android:textSize="@dimen/s15"
+        android:maxLength="30">
+    </EditText>
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d50"
+        android:layout_marginLeft="@dimen/d40"
+        android:layout_marginRight="@dimen/d40"
+        android:layout_marginTop="@dimen/d10"
+        android:text="Register"
+        android:textSize="@dimen/s15"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/et_pass"
+        android:background="@drawable/bg_btn_register_not"/>
+
+    <TextView
+        android:id="@+id/tv_gologin"
+        android:text="Go to login"
+        android:textSize="@dimen/s15"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

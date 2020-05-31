@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cd_view_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/d10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/public_01" />
+        <TextView
+            android:id="@+id/tv_like"
+            android:layout_marginTop="@dimen/d50"
+            android:layout_marginLeft="@dimen/d50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:background="@mipmap/public_01"/>
+
+        <TextView
+            android:id="@+id/tv_nope"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/d50"
+            android:layout_marginRight="@dimen/d50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:background="@mipmap/public_02"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_work"
+            android:layout_marginLeft="@dimen/d20"
+            android:layout_marginBottom="@dimen/d15">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="helly"
+                android:textColor="@android:color/white"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d15"
+                android:layout_toRightOf="@+id/tv_name"
+                android:text="25"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/d20"
+            android:layout_marginBottom="@dimen/d20"
+            android:text="worker"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/d20"
+            android:layout_marginBottom="@dimen/d40"
+            android:src="@mipmap/ic_about"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

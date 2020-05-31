@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="@dimen/d80"
+        android:layout_height="@dimen/d80"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_marginRight="@dimen/d10"
+        android:src="@mipmap/tab_main_logo" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_photo"
+        android:text="name"
+        android:textStyle="bold"
+        android:textColor="@color/c3"
+        android:textSize="@dimen/s25" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_toRightOf="@+id/iv_photo"
+        android:text="abcdef"
+        android:textColor="@color/c5"
+        android:textSize="@dimen/s15" />
+
+    <ImageView
+        android:id="@+id/iv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/d15"
+        android:layout_centerVertical="true"
+         />
+
+</RelativeLayout>
